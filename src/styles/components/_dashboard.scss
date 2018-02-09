@@ -1,0 +1,33 @@
+.dashboard{
+  display: flex;
+  justify-content: space-between;
+  .expense-summary{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    color: #fff;
+    line-height: 28px;
+  }
+  .expense-filter{
+    display: flex;
+    input{
+      padding: 0 15px;
+      outline: 0;
+    }
+  }
+  .expense-single{
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    &:last-child{
+      border-bottom: none;
+    }
+    .title{
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+    }
+    p{
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}

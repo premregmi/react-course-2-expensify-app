@@ -5,16 +5,59 @@ html {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
+  margin: 0;
+  padding: 0;
+  background: purple;
 }
 
-button {
+.button {
   cursor: pointer;
+  min-width: 80px;
+  min-height: 40px;
+  border-radius: 20px;
+  outline: none;
+  padding: 0 25px;
+  border:none;
+  color: purple;
+  &.danger{
+    background: purple;
+    color: #fff;
+  }
 }
 
-button:disabled {
+.button:disabled {
   cursor: default;
 }
 
+.container{
+  max-width: 992px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+}
+
+.page-title{
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+
+.expense-form{
+  display: flex;
+  flex-direction: column;
+  .single{
+    margin-bottom: 30px;
+    padding: 15px;
+    border:none;
+  }
+  .right{
+    margin-left: auto;
+  }
+}
+.up-40{
+  transform: translate(0, -40px);
+}
 .is-active {
   font-weight: bold;
 }
@@ -24,4 +67,9 @@ button:disabled {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.no-padding{
+  padding: 0 !important;
 }
